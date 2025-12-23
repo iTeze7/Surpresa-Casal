@@ -1,4 +1,4 @@
-// ===== PAGE NAVIGATION =====
+
 function showCelebration() {
     document.getElementById('home-page').classList.remove('active');
     document.getElementById('celebration-page').classList.add('active');
@@ -11,7 +11,7 @@ function showHome() {
     document.getElementById('home-page').classList.add('active');
 }
 
-// ===== PARTICLES =====
+
 function createHomeParticles() {
     const container = document.getElementById('home-particles');
     for (let i = 0; i < 30; i++) {
@@ -48,9 +48,9 @@ function createCelebrationHearts() {
     }
 }
 
-// ===== CAROUSEL =====
+
 let currentSlide = 0;
-const totalSlides = 3;
+const totalSlides = 8;
 
 function updateCarousel() {
     const slides = document.querySelectorAll('.carousel-slide');
@@ -72,7 +72,7 @@ function prevSlide() {
     updateCarousel();
 }
 
-// ===== TIME COUNTER =====
+
 const startDate = new Date('2025-10-25T00:00:00');
 
 function calculateTimeElapsed() {
@@ -85,7 +85,7 @@ function calculateTimeElapsed() {
     let minutes = now.getMinutes() - startDate.getMinutes();
     let seconds = now.getSeconds() - startDate.getSeconds();
     
-    // Adjust negative values
+  
     if (seconds < 0) {
         seconds += 60;
         minutes--;
@@ -138,7 +138,7 @@ function startTimeCounter() {
     timeInterval = setInterval(updateTimeDisplay, 1000);
 }
 
-// ===== INITIALIZATION =====
+
 document.addEventListener('DOMContentLoaded', function() {
     createHomeParticles();
 });
