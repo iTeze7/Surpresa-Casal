@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Presente Especial ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon-192.png">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+    <meta name="theme-color" content="#e63975">
+</head>
+<body class="dark">
+    <!-- Página Inicial -->
+    <div id="home-page" class="page active">
+        <div class="page-container">
+            <!-- Background image with overlay -->
+            <div class="background-overlay">
+                <img src="images/background-home.jpg" alt="Background" class="background-image">
+                <div class="overlay dark-overlay"></div>
+            </div>
+            
+            <!-- Animated background particles -->
+            <div class="particles-container" id="home-particles"></div>
+
+            <div class="content-container fade-in-up">
+                <!-- Decorative hearts -->
+                <div class="hearts-row">
+                    <svg class="heart heart-primary pulse-heart" style="animation-delay: 0s;" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <svg class="heart heart-secondary pulse-heart" style="animation-delay: 0.5s;" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <svg class="heart heart-accent pulse-heart" style="animation-delay: 1s;" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+
+                <!-- Main button -->
+                <button class="main-button" onclick="showCelebration()">
+                    <span class="button-content">
+                        <svg class="heart-icon pulse-heart" width="32" height="32" viewBox="0 0 24 24" fill="white">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                        CLIQUE
+                    </span>
+                    <div class="shine-effect"></div>
+                </button>
+
+                <!-- Decorative text -->
+                <p class="decorative-text">Um presente especial para você ❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página de Celebração -->
+    <div id="celebration-page" class="page">
+        <div class="page-container">
+            <!-- Background image with overlay -->
+            <div class="background-overlay">
+                <img src="images/background-flowers.jpg" alt="Background" class="background-image">
+                <div class="overlay medium-overlay"></div>
+            </div>
+            
+            <!-- Floating hearts background -->
+            <div class="particles-container" id="celebration-hearts"></div>
+
+            <div class="celebration-content fade-in-up">
+                <!-- Photo carousel -->
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel">
+                        <div class="carousel-slide active">
+                            <img src="images/couple-photo-1.jpg" alt="Nós dois - Foto 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/couple-photo-2.jpg" alt="Nós dois - Foto 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/couple-photo-3.jpg" alt="Nós dois - Foto 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/couple-photo-4.jpg" alt="Nós dois - Foto 4">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/couple-photo-5.jpg" alt="Nós dois - Foto 5">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/couple-photo-6.jpg" alt="Nós dois - Foto 6">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/couple-photo-7.jpg" alt="Nós dois - Foto 7">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/couple-photo-8.jpg" alt="Nós dois - Foto 8">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev-btn" onclick="prevSlide()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn next-btn" onclick="nextSlide()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Time counter -->
+                <div class="time-counter-section">
+                    <h1 class="time-title">Minha vida começou há:</h1>
+                    <div class="time-counter">
+                        <p id="time-display">Calculando...</p>
+                    </div>
+                </div>
+
+                <!-- Love message -->
+                <div class="love-message-card">
+                    <div class="hearts-divider">
+                        <svg class="small-heart" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        <svg class="small-heart" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        <svg class="small-heart" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        <svg class="small-heart" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        <svg class="small-heart" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        <svg class="small-heart" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    
+                    <p class="love-message">
+                        Meu amor, nosso primeiro mês foi incrível! Cada dia ao seu lado é especial e único. 
+                        Obrigado por todos os momentos que compartilhamos juntos, pelas risadas, pelos abraços 
+                        e por todo o carinho. Você ilumina minha vida de uma forma que eu nunca imaginei ser possível. 
+                        Estou ansioso por todos os momentos que ainda vamos viver juntos. Te amo muitão! ❤️
+                    </p>
+                    
+                    <div class="hearts-divider">
+                        <svg class="small-heart" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        <svg class="small-heart" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        <svg class="small-heart" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        <svg class="small-heart" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        <svg class="small-heart" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        <svg class="small-heart" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
