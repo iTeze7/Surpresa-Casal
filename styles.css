@@ -1,4 +1,4 @@
-/* ===== RESET & BASE ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,24 +6,24 @@
 }
 
 :root {
-    /* Colors - Light Mode */
+  
     --background: hsl(0, 0%, 96%);
     --foreground: hsl(0, 0%, 9%);
     --card: hsl(0, 0%, 98%);
     --card-foreground: hsl(0, 0%, 9%);
     --muted-foreground: hsl(0, 0%, 63%);
     
-    /* Romantic theme colors */
+  
     --love-primary: hsl(345, 82%, 58%);
     --love-secondary: hsl(330, 81%, 60%);
     --love-accent: hsl(0, 72%, 51%);
     
-    /* Fonts */
+  
     --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
     --font-serif: 'EB Garamond', ui-serif, Georgia, serif;
 }
 
-/* Dark Mode Colors */
+
 .dark {
     --background: hsl(0, 0%, 9%);
     --foreground: hsl(0, 0%, 98%);
@@ -43,7 +43,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== PAGES ===== */
+
 .page {
     display: none;
     min-height: 100vh;
@@ -62,7 +62,7 @@ body {
     overflow: hidden;
 }
 
-/* ===== BACKGROUND ===== */
+
 .background-overlay {
     position: absolute;
     inset: 0;
@@ -87,7 +87,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* ===== PARTICLES ===== */
+
 .particles-container {
     position: absolute;
     inset: 0;
@@ -107,7 +107,7 @@ body {
     opacity: 0.1;
 }
 
-/* ===== CONTENT CONTAINER ===== */
+
 .content-container {
     position: relative;
     z-index: 10;
@@ -118,7 +118,7 @@ body {
     padding: 1.5rem;
 }
 
-/* ===== HEARTS ===== */
+
 .hearts-row {
     display: flex;
     gap: 1rem;
@@ -141,7 +141,7 @@ body {
     color: var(--love-accent);
 }
 
-/* ===== MAIN BUTTON ===== */
+
 .main-button {
     position: relative;
     overflow: hidden;
@@ -187,7 +187,7 @@ body {
     transform: translateX(100%);
 }
 
-/* ===== DECORATIVE TEXT ===== */
+
 .decorative-text {
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.875rem;
@@ -195,7 +195,7 @@ body {
     animation: pulse 2s ease-in-out infinite;
 }
 
-/* ===== CELEBRATION PAGE ===== */
+
 .celebration-content {
     position: relative;
     z-index: 10;
@@ -207,7 +207,7 @@ body {
     padding: 1.5rem;
 }
 
-/* ===== CAROUSEL ===== */
+
 .carousel-container {
     position: relative;
     width: 20rem;
@@ -273,7 +273,6 @@ body {
     right: 0.5rem;
 }
 
-/* ===== TIME COUNTER ===== */
 .time-counter-section {
     text-align: center;
     display: flex;
@@ -312,7 +311,6 @@ body {
     }
 }
 
-/* ===== LOVE MESSAGE ===== */
 .love-message-card {
     background-color: var(--card);
     border-radius: 1rem;
@@ -351,7 +349,6 @@ body {
     }
 }
 
-/* ===== ANIMATIONS ===== */
 @keyframes float {
     0%, 100% {
         transform: translateY(0px);
