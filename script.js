@@ -50,7 +50,7 @@ function createCelebrationHearts() {
 
 
 let currentSlide = 0;
-const totalSlides = 8;
+const totalSlides = 7;
 
 function updateCarousel() {
     const slides = document.querySelectorAll('.carousel-slide');
